@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: rgb(37, 34, 34, 0.9);
+    border-radius: 10px;
+    position: sticky;
+    top: 0px;
+    transition: 0.2s;
+}
+
+.header:hover {
+    background-color: rgb(37, 34, 34, 1);
+}
+
+.leftContainer {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftContainer li {
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.leftContainer li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.leftContainer li a:hover {
+    color: blue;
+}
+
+.rightContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rightContainer li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.rightContainer li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.rightContainer li a:hover {
+    color: white;
+    background-color: blue;
+}
+
+.displayNone {
+    display: none;
+}

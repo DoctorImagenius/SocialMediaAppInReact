@@ -1,0 +1,97 @@
+.container {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 5px;
+    color: blue;
+    background-color: rgb(245, 249, 255);
+    box-shadow: 0px 0px 10px 2px #ccc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container:hover {
+    background-color: rgb(212, 229, 255);
+    box-shadow: 0px 0px 10px 2px #7a7a7a;
+}
+
+.container button {
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 1px solid blue;
+    background-color: rgb(245, 249, 255);
+    border-radius: 10px;
+    color: blue;
+}
+
+.container button:hover {
+    background-color: blue;
+    color: rgb(245, 249, 255);
+    cursor: pointer;
+}
+
+.containerTitle {
+    font-size: 40px;
+    font-family: fantasy;
+    color: green;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.containerTitle div {
+    max-width: 70%;
+}
+
+.containerTitle button {
+    margin: auto;
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 1px solid blue;
+    background-color: rgb(245, 249, 255);
+    border-radius: 10px;
+    color: blue;
+}
+
+.containerTitle button:hover {
+    background-color: blue;
+    color: rgb(245, 249, 255);
+    cursor: pointer;
+}
+
+.containerBody {
+    font-size: 50px;
+    color: black;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.innerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.innerContainer input {
+    width: 80%;
+    margin: 10px 10px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.innerContainer button {
+    width: 10%;
+}
