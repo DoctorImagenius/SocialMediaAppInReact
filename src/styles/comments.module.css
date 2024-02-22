@@ -38,3 +38,11 @@
     outline: none;
     padding: 10px;
 }
+
+@media screen and (width<=900px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+}

@@ -89,3 +89,20 @@
     color: rgb(245, 249, 255);
     cursor: pointer;
 }
+
+@media screen and (width<=900px) {
+    .innerContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (width<=600px) {
+    .container > button {
+        max-width: 30%;
+        font-size: 15px;
+    }
+
+    .showName {
+        font-size: 30px;
+    }
+}

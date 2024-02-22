@@ -95,3 +95,46 @@
 .innerContainer button {
     width: 10%;
 }
+
+@media screen and (width<=1000px) {
+    .container {
+        width: 90%;
+    }
+
+    .innerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .innerContainer input {
+        width: 80%;
+        align-self: center;
+    }
+
+    .innerContainer button {
+        width: 50%;
+        align-self: center;
+    }
+}
+
+@media screen and (width<=600px) {
+    .containerBody {
+        font-size: 20px;
+        overflow-x: scroll;
+    }
+
+    .containerTitle {
+        font-size: 25px;
+        flex-direction: column;
+    }
+
+    .containerTitle div {
+        order: -1;
+        align-self: center;
+        margin: 10px;
+    }
+
+    .containerTitle button {
+        margin: 10px;
+    }
+}

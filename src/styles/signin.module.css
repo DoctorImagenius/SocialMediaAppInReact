@@ -52,3 +52,19 @@
 .innerContainer button:hover {
     background-color: rgb(0, 0, 199);
 }
+
+@media screen and (width<=900px) {
+    .innerContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (width<=450px) {
+    .innerContainer {
+        width: 90%;
+    }
+
+    .innerContainer label {
+        font-size: 30px;
+    }
+}
