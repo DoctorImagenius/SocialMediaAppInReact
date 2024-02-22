@@ -7,7 +7,6 @@ export const AppProvider = ({ children }) => {
     const [users, setUsers] = useState([]);
     const [email, setEmail] = useState("");
     const [comments, setComments] = useState([]);
-    const [count] = useState(0);
 
     useEffect(() => {
         const localStoragePosts = localStorage.getItem("posts");
@@ -69,7 +68,7 @@ export const AppProvider = ({ children }) => {
             };
             fetchData();
         }
-    }, [count]);
+    }, []);
 
     return (
         <AppContext.Provider
