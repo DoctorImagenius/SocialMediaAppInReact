@@ -12,7 +12,7 @@ export default function Comments({ comment, name, id, objEmail }) {
         if (objEmail === email) {
             setShow(true);
         }
-    }, []);
+    }, [objEmail, email]);
 
     function del() {
         let fiteredComments = comments.filter((obj) => obj.id !== id);

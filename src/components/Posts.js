@@ -61,7 +61,6 @@ export default function Posts({ title, body, id, modify = false }) {
                 break;
             }
         }
-        console.log(myComment, email, commentId, userName, id);
         let commentObj = {
             body: myComment,
             email: email,
