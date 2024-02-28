@@ -16,19 +16,19 @@ const route = createBrowserRouter([
         element: <Home></Home>,
     },
     {
-        path: "my-posts",
+        path: "/my-posts",
         element: <MyPosts></MyPosts>,
     },
     {
-        path: "signin",
+        path: "/signin",
         element: <SignIn></SignIn>,
     },
     {
-        path: "signout",
+        path: "/signout",
         element: <SignUp></SignUp>,
     },
     {
-        path: "*",
+        path: "/*",
         element: (
             <div className={indexStyle.Container}>
                 <Header></Header>
