@@ -53,6 +53,25 @@
     background-color: rgb(0, 0, 199);
 }
 
+.lowerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.lowerContainer button {
+    color: blue;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: white;
+    border-bottom: 1px solid blue;
+    transition: 0.3s;
+}
+
+.lowerContainer button:hover {
+    transform: scale(1.1);
+}
+
 @media screen and (width<=900px) {
     .innerContainer {
         width: 80%;

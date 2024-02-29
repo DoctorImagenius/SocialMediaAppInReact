@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import signInStyle from "../styles/signin.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
     NotificationContainer,
     NotificationManager,
@@ -13,6 +14,7 @@ export default function SignIn() {
     let [userEmail, setUserEmail] = useState("");
     let [password, setPassword] = useState("");
     let { users, setEmail } = useAppContext();
+    let navigate = useNavigate();
 
     function SignIn() {
         if (userEmail === "" && password === "") {
@@ -23,11 +25,11 @@ export default function SignIn() {
                     users[i].email === userEmail &&
                     users[i].password === password
                 ) {
-                    NotificationManager.success("Sign In Successfully...");
                     setUserEmail("");
                     setPassword("");
                     setEmail(userEmail);
                     localStorage.setItem("email", userEmail);
+                    navigate("/my-posts");
                     return;
                 }
                 if (

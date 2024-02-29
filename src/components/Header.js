@@ -32,7 +32,7 @@ function Header() {
                     </li>
                     <li>
                         <Link
-                            to={"/signout"}
+                            to={"/signup"}
                             className={email ? headerStyle.displayNone : ""}
                         >
                             Sign Up
