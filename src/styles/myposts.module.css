@@ -1,0 +1,108 @@
+.showMessage {
+    margin-top: 20%;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    color: red;
+}
+
+.showName {
+    margin-top: 5%;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px #222222;
+    text-align: center;
+    color: rgb(0, 102, 255);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > button {
+    max-width: 20%;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 10px;
+    color: blue;
+}
+
+.container > button:hover {
+    background-color: blue;
+    color: rgb(245, 249, 255);
+    cursor: pointer;
+}
+
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.innerContainer input {
+    color: green;
+    margin: 20px 20px;
+    font-size: 20px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.innerContainer textarea {
+    margin: 0px 20px;
+    font-size: 20px;
+    height: 100px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.innerContainer button {
+    max-width: 30%;
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 10px;
+    color: blue;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.innerContainer button:hover {
+    background-color: blue;
+    color: rgb(245, 249, 255);
+    cursor: pointer;
+}
+
+@media screen and (width<=900px) {
+    .innerContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (width<=600px) {
+    .container > button {
+        max-width: 30%;
+        font-size: 15px;
+    }
+
+    .showName {
+        font-size: 30px;
+    }
+}

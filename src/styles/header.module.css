@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: rgb(37, 34, 34, 0.9);
+    border-radius: 10px;
+    position: sticky;
+    top: 0px;
+    transition: 0.2s;
+}
+
+.header:hover {
+    background-color: rgb(37, 34, 34, 1);
+}
+
+.leftContainer {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftContainer li {
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.leftContainer li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.leftContainer li a:hover {
+    color: blue;
+}
+
+.rightContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rightContainer li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.rightContainer li a {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    padding-bottom: 8px;
+}
+
+.rightContainer li a:hover {
+    color: blue;
+    border: 1px solid blue;
+    background-color: rgb(37, 34, 34, 1);
+}
+
+.displayNone {
+    display: none;
+}
+
+@media screen and (width<=450px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftContainer {
+        align-self: center;
+    }
+
+    .rightContainer {
+        margin: 20px;
+    }
+}
