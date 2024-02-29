@@ -32,6 +32,16 @@ export default function MyPosts() {
         if (newTitle === "" || newBody === "") {
             NotificationManager.warning("Please fill the details!");
             return;
+        } else if (newTitle.length < 3 || newBody.length < 3) {
+            NotificationManager.warning(
+                "Titlte or Body length should be greater than 2!"
+            );
+            return;
+        } else if (!/^[a-zA-Z]+$/.test(newTitle)) {
+            NotificationManager.warning(
+                "Title should not have a number or special Character... "
+            );
+            return;
         }
         let lastIndex = posts.length - 1;
         let oldPost = [...posts];
